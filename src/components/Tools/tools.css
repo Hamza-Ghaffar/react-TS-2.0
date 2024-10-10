@@ -1,0 +1,21 @@
+.toolsImgs {
+  display: flex;
+  margin-left: -2rem;
+  margin-top: 2rem;
+}
+
+.toolsImg {
+  object-fit: contain; /* Prevents cutting edges */
+  width: 5rem;
+  height: 4rem; /* Consistent height */
+  margin: 2rem; /* Space between images */
+  border-radius: 0.5rem; /* Optional: For rounded corners */
+  max-width: 10rem; /* Ensure images don't exceed this width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease; /* Animation on hover */
+}
+
+.toolsImg:hover {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Light white shadow effect */
+  border: 1px solid white; /* Add a 1px white border */
+}
